@@ -1,1 +1,3 @@
-Chat BOT written for Cisco Spark that responds to commands to query info on SF Muni routes/stops/departures.  Writen in Go and designed to run on Google App Engine.
+Chat BOT written for Cisco Spark that responds to commands to query info on SF Muni routes/stops/departures (use 511 API).  Writen in Go and designed to run on Google App Engine.
+
+Before deploying you will need to update spark token and 511 key in app.yaml.

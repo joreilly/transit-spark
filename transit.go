@@ -51,7 +51,7 @@ func init() {
 			//person.Get()
 
 			c := &Client{
-				key:  "",
+				key:  os.Getenv("TRANSIT_511_KEY"),
 				http: urlfetch.Client(ctx),
 			}
 
@@ -136,7 +136,7 @@ func init() {
 	m.Get("/routes", func(res http.ResponseWriter, req *http.Request, r render.Render) {
 		ctx := appengine.NewContext(req)
 		c := &Client{
-			key:  "a387ce07-0a9a-4f75-b3f4-0ec9031cc9d3",
+			key:  os.Getenv("TRANSIT_511_KEY"),
 			http: urlfetch.Client(ctx),
 		}
 
@@ -147,7 +147,7 @@ func init() {
 	m.Get("/stops", func(res http.ResponseWriter, req *http.Request, r render.Render) {
 		ctx := appengine.NewContext(req)
 		c := &Client{
-			key:  "a387ce07-0a9a-4f75-b3f4-0ec9031cc9d3",
+			key:  os.Getenv("TRANSIT_511_KEY"),
 			http: urlfetch.Client(ctx),
 		}
 
@@ -158,7 +158,7 @@ func init() {
 	m.Get("/departures", func(res http.ResponseWriter, req *http.Request, r render.Render) {
 		ctx := appengine.NewContext(req)
 		c := &Client{
-			key:  "a387ce07-0a9a-4f75-b3f4-0ec9031cc9d3",
+			key:  os.Getenv("TRANSIT_511_KEY"),
 			http: urlfetch.Client(ctx),
 		}
 

@@ -9,4 +9,5 @@ handlers:
   
 env_variables:
   SPARK_TOKEN: ''  
+  TRANSIT_511_KEY: ''
   
